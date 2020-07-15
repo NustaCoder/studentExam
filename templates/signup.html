@@ -33,7 +33,7 @@
 				<div class="col-12 col-sm-4">
 					<div class="form-group">
 						<label for="fname">First Name</label>
-						<input type="text" class="form-control" id="fname" name="fname" required>
+						<input type="text" class="form-control" id="fname" name="fname" autofocus required>
 					</div>
 				</div>
 			</div>
@@ -82,7 +82,17 @@
 			</div>
 			<div class="row row-content">
 				<div class="col-12 col-sm-4">
-					<button type="submit" class="btn btn-primary" style="margin-right: 5px;">Signup</button>
+					<div class="form-group">
+						<input type="radio" name="gender" id="gender" value="male" checked> Male
+						<input type="radio" name="gender" id="gender" value="female"> Female
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row row-content">
+				<div class="col-12 col-sm-4">
+					<button type="submit" class="btn btn-primary" style="margin-bottom: 30px;">Signup</button>
 
 				</div>
 
