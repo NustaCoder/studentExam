@@ -66,34 +66,20 @@
     </nav>
 
 
-    <header class="jumbotron">
-        <div class="container">
-
-            <div class="row row-header">
-                <div class="col-12 col-sm-8">
-                    <h1 style="font-family: cursive;">Vidyalaya</h1>
-                    <p>Welcome {{session['greet']}}. {{session['firstname'] }} {{session['lastname']}} to the Vidyalaya.
-                    </p>
-                    <p></p>
-                </div>
-
-            </div>
-        </div>
-
-    </header>
 
 
     <div class="row row-content align-items-center">
         <div class="col-12 col-sm-6 order-sm-first">
-            <h3>Test of the day</h3>
-            <p class="d-none d-sm-block">The test of day is on the subject Maths and the chapter is Comparing
-                Quontities. Click the Button below and Give your best
+            <h3>English</h3>
+            <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perferendis a
+                officia dolore hic impedit voluptate in possimus sit facere saepe, accusantium mollitia commodi quas
+                maxime ab assumenda, neque quam!
             </p>
-            <a class="btn btn-primary text-white">Start now</a>
+            <a class="btn btn-primary text-white">Open now</a>
         </div>
         <div class="col-12 col-sm-6 order-sm-last">
             <img class="d-flex mr-3 img-thumbnail align-self-center"
-                src="{{ url_for('static', filename='cssfiles/back1.jpg') }}" alt="image">
+                src="{{ url_for('static', filename='cssfiles/english.jpg') }}" alt="image">
 
         </div>
     </div>
@@ -101,30 +87,61 @@
 
     <div class="row row-content align-items-center">
         <div class="col-12 col-sm-6 order-sm-last">
-            <h3>Unlimited Practice & In-depth Analysis</h3>
-            <p class="d-none d-sm-block">Adaptive, interactive tests that help students master each chapter. Recommended
-                videos prompt students to correct mistakes in a practice session, enabling long lasting learning.</p>
-            <a class="btn btn-primary text-white" href="/subjects">Goto subjects</a>
+            <h3>Maths</h3>
+            <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil repellat
+                veritatis nostrum assumenda, id itaque voluptatibus quia magni! Voluptatem quis voluptas amet
+                perferendis aperiam accusamus distinctio porro optio unde ea?</p>
+            <a class="btn btn-primary text-white">Open now</a>
         </div>
         <div class="col-12 col-sm-6 order-sm-first">
             <img class="d-flex mr-3 img-thumbnail align-self-center"
-                src="{{ url_for('static', filename='cssfiles/back2.jpg') }}" alt="image">
+                src="{{ url_for('static', filename='cssfiles/maths.jpg') }}" alt="image">
 
         </div>
     </div>
 
     <div class="row row-content align-items-center">
         <div class="col-12 col-sm-6 order-sm-first">
-            <h3>Engaging Interactive Questions</h3>
-            <p class="d-none d-sm-block">Crafted to evoke curiosity, this all-new feature will develop student's
-                critical thinking abilities and strengthen their understanding of core concept.
-
+            <h3>Science and Technology</h3>
+            <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto itaque
+                aspernatur aut quam est minus accusantium ex cum velit suscipit, aliquam rem quos vero incidunt laborum
+                recusandae cumque, praesentium saepe?
             </p>
-            <a class="btn btn-primary text-white">Goto LeaderBoards</a>
+            <a class="btn btn-primary text-white">Open now</a>
         </div>
         <div class="col-12 col-sm-6 order-sm-last">
             <img class="d-flex mr-3 img-thumbnail align-self-center"
-                src="{{ url_for('static', filename='cssfiles/back3.jpg') }}" alt="image">
+                src="{{ url_for('static', filename='cssfiles/science.jpg') }}" alt="image">
+
+        </div>
+    </div>
+    <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-6 order-sm-last">
+            <h3>Social Science</h3>
+            <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil repellat
+                veritatis nostrum assumenda, id itaque voluptatibus quia magni! Voluptatem quis voluptas amet
+                perferendis aperiam accusamus distinctio porro optio unde ea?</p>
+            <a class="btn btn-primary text-white">Open now</a>
+        </div>
+        <div class="col-12 col-sm-6 order-sm-first">
+            <img class="d-flex mr-3 img-thumbnail align-self-center"
+                src="{{ url_for('static', filename='cssfiles/social.jpg') }}" alt="image">
+
+        </div>
+    </div>
+
+    <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-6 order-sm-first">
+            <h3>Computer</h3>
+            <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto itaque
+                aspernatur aut quam est minus accusantium ex cum velit suscipit, aliquam rem quos vero incidunt laborum
+                recusandae cumque, praesentium saepe?
+            </p>
+            <a class="btn btn-primary text-white">Open now</a>
+        </div>
+        <div class="col-12 col-sm-6 order-sm-last">
+            <img class="d-flex mr-3 img-thumbnail align-self-center"
+                src="{{ url_for('static', filename='cssfiles/computer.jpg') }}" alt="image">
 
         </div>
     </div>
@@ -132,55 +149,7 @@
     </div>
 
     </div>
-    <div class="row row-content">
-        <div class="col-12 col-sm-4">
-            <div class="card" style="width: 18rem;padding: 5px; margin: 20px 20px;">
-                <img class="card-img-top" src="{{ url_for('static', filename='cssfiles/shlok.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Shlok Gadre</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Mollitia nisi incidunt
-                        explicabo accusantium doloribus aliquam amet optio deleniti officiis tenetur, nostrum rerum
-                        consequuntur et quia sapiente quis porro quas.</p>
-                    <a href="#" class="btn btn-primary btn-md disabled" tabindex="-1" role="button"
-                        aria-disabled="true">Know
-                        more</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-4">
-            <div class="card" style="width: 20rem;padding: 5px; margin: 20px 20px;">
-                <img class="card-img-top" src="{{ url_for('static', filename='cssfiles/ketki1.jpg') }}"
-                    alt=" Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Ketki Paralikar</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad blanditiis deleniti
-                        omnis facilis quam pariatur, porro, consectetur sunt corrupti dolorem neque esse reiciendis
-                        tempora consequatur, dicta molestiae architecto quasi voluptatem.</p>
-                    <a href="#" class="btn btn-primary btn-md disabled" tabindex="-1" role="button"
-                        aria-disabled="true">Know
-                        more</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-4">
-            <div class="card" style="width: 18rem; padding: 5px; margin: 20px 20px;">
-                <img class="card-img-top" src="{{ url_for('static', filename='cssfiles/Aadi.jpg') }}"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Aaditya Paralikar</h5>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum cum quo quos
-                        sit porro nulla ut inventore labore, hic repellat officiis in dignissimos recusandae earum
-                        provident voluptate officia cumque enim.
-                    </p>
-                    <a href="#" class="btn btn-primary btn-md disabled" tabindex="-1" role="button"
-                        aria-disabled="true">Know
-                        more</a>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <footer class="footer">
         <div class="container">
             <div class="row">

@@ -41,7 +41,11 @@
 
             </div>
           </li>
-          <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="#">Free Counselling</a>
+          <li class="nav-item"><a class="nav-link text-dark font-weight-bold" style="cursor: pointer;"
+              data-toggle="modal" data-target="#exampleModal">Free Counselling</a>
+
+
+
           </li>
           <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="login">
               Log In</a></li>
@@ -53,6 +57,32 @@
     </div>
 
   </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header mymodal-header">
+          <h5 class="modal-title  " id="exampleModalLabel">GET FREE
+            EXPERT COUNSELLING<br><small>we need a few details to reach you.</small>
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" style="margin-top: 20px">
+            <div class="form-group">
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter phone number" autofocus
+                required>
+
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Proceed</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <header class="jumbotron">
@@ -263,6 +293,8 @@
       });
 
     });
+
+
   </script>
 
 </body>

@@ -35,7 +35,13 @@ body{
     background-color: #63ff14;
 
 }
-
+.text_color {
+    color: #000;
+    font-size: 25px;
+}
+.mymodal-header{
+    background-color: #63ff14;
+}
 .footer{
     background-color:#d0ffb8;
     margin:0px auto;

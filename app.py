@@ -91,6 +91,14 @@ def signupPage():
         return render_template('signup.html')
 
 
+@app.route('/maths')
+def mathsPage():
+    if 'username' in session:
+        return render_template('maths.html')
+    else:
+        return render_template('login.html')
+
+
 @app.route('/adduser', methods=['POST'])
 def addStudent():
     _fname = request.form['fname']
@@ -123,6 +131,14 @@ def addStudent():
             return not_found()
     else:
         return not_found()
+
+
+@app.route('/subjects')
+def subjectPage():
+    if 'username' in session:
+        return render_template('subjects.html')
+    else:
+        return redirect(url_for('loginPage'))
 
 
 if __name__ == "__main__":
